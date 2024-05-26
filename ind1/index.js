@@ -2,7 +2,7 @@
  * @module TransactionAnalyzer
  */
 
-const json = require('./transactions.json');
+import {json} from './transactions.js'
 
 /**
  * Class representing a transaction.

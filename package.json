@@ -4,6 +4,7 @@
   "author": "alexanderzaporo@gmail.com",
   "description": "Project to keep track of individualnaya rabotas",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
