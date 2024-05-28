@@ -41,6 +41,14 @@ h1 {
     padding-bottom: 10px;
 }
 
+.card-header-wrong {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #d82121;
+    border-bottom: 1px solid #d82121;
+    padding-bottom: 10px;
+}
+
 #newLabel {
     font-size: 0.8em;
     margin-bottom: 10px;
@@ -49,6 +57,7 @@ h1 {
     right: 0;
     position: absolute;
     padding-right: 20px;
+    top: 20%;
 }
 
 .new {
