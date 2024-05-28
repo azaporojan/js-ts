@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity for Captain Smith</title>
+    <script src="src/activity.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="updateActivity(); displayActivity()">
+<div class="container">
+    <h1>Hey, Captain Smith, you can:</h1>
+    <div class="card">
+                <span id="newLabel" class="old">
+                New activity received!
+            </span>
+        <div class="card-header">
+            Activity
+
+        </div>
+
+        <div class="card-body">
+            <p id="activity"></p>
+            <ul>
+                <li><strong>Availability:</strong> <span id="availability"></span></li>
+                <li><strong>Type:</strong> <span id="type"></span></li>
+                <li><strong>Participants:</strong> <span id="participants"></span></li>
+                <li><strong>Price:</strong> <span id="price"></span></li>
+                <li><strong>Accessibility:</strong> <span id="accessibility"></span></li>
+                <li><strong>Duration:</strong> <span id="duration"></span></li>
+                <li><strong>Kid-Friendly:</strong> <span id="kidFriendly"></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
