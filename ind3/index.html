@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions appender</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="table_transactions" role="region" tabindex="0">
+    <table>
+        <caption>
+            <p>The Table with Transactions</p>
+        </caption>
+        <caption>
+            <p id="total">Total: </p>
+        </caption>
+        <caption>
+            <p id="fullDescription"></p>
+        </caption>
+        <thead>
+        <tr>
+            <th>Transaction ID</th>
+            <th>Transaction Date</th>
+            <th>Transaction Category</th>
+            <th>Transaction Description</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="transactionList">
+        </tbody>
+    </table>
+
+</div>
+<div class="form_container" id="formContainer">
+    <div class="form_header" id="formHeader">
+        <span>Transaction Form</span>
+    </div>
+    <div id="transactionForm" >
+        <form>
+        <table class="table_transactions">
+            <tr>
+                <th>Date</th>
+                <td><input type="date" id="date" required></td>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <td><input type="number" id="amount" step="0.01" required></td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td><select id="category" required>
+                    <option>Paine calda</option>
+                    <option>Pivo</option>
+                    <option>Cigarete</option>
+                    <option>Creioane</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td><textarea id="description" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="addTransaction()">Submit</button>
+<!--                    <input type="submit" onsubmit="addTransaction()">-->
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
